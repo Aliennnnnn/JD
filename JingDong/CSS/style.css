@@ -1,0 +1,298 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-18 21:45:55
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-19 21:32:08
+*/
+
+/*样式重置*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,hr,th,td,select{ 
+	margin:0;
+	padding:0;
+}
+em{
+	font-style:normal;
+}
+li{ 
+	list-style:none;
+}
+a{ 
+	text-decoration:none;
+}
+img{ 
+	border:none;
+	vertical-align:top;
+}
+table{ 
+	border-collapse:collapse;
+}
+textarea{ 
+	resize:none;
+	overflow:auto;
+}
+
+/*公共样式*/
+body{
+	width: 100%;
+	background-color: #f6f6f6;
+	font-size: 12px;
+	font-family: 微软雅黑;
+}
+a{
+	color: #999;
+}
+/*nav*/
+nav{
+	width: 100%;
+	height: 31px;
+	background-color: #e3e4e5;
+}
+nav .main{
+	width: 1190px;
+	height: 31px;
+	margin: 0 auto;
+}
+nav .logo{
+	width: 190px;
+	height: 31px;
+	float: left;
+	background-color: #fff;
+}
+nav .address{
+	color: #999999;
+	float: left;
+	margin-left: 10px;
+}
+nav .address .add_show{
+	height: 31px;
+	width: 58px;
+	line-height: 31px;
+	border: 1px solid #e3e4e5;
+	border-bottom: none;
+}
+nav .address .add_show:hover{
+	background-color: #fff;
+	border-color: #ccc;
+}
+nav .address .add_show a{
+	margin-left: 24px;
+}
+nav .address .add_dropdown{
+	//display: none;
+	width: 300px;
+	height: 196px;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 10px;
+	background-color: #fff;
+}
+nav .address .add_dropdown .item{
+	width: 60px;
+	height: 24px;
+	line-height: 24px;
+	margin: 2px 0;
+	float: left;
+}
+nav .address .add_dropdown .item a{
+	padding: 0 9px; 
+	display: inline-block;
+	height: 24px;
+}
+nav .address .add_dropdown .item a:hover{
+	background-color: #F4F4F4;
+	color: #C81623
+}
+nav .address .add_dropdown .active{
+	background-color: #F10215;
+	color: #fff;
+}
+nav .nav_list{
+	position: absolute;
+	top:0;
+	left: 722px;
+	margin-left: 50px;
+	height: 31px;
+	line-height: 31px;
+}
+nav .nav_list span{
+	color:#CCCCCC;
+}
+nav .nav_list>li{
+	display: inline-block;
+	float: left;
+}
+nav .nav_list>span{
+	float: left;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+}
+nav .nav_list>li a{
+	padding: 0 7px;
+}
+nav .nav_list li .register{
+	color: #f10215;
+}
+nav .nav_list li a:hover{
+	color: #c81623;
+}
+nav .nav_list .mine_jd{
+	position: relative;
+	border: 1px solid #e3e4e5;
+	border-bottom: none;
+}
+nav .nav_list .mine_jd:hover{
+	background-color: #fff;
+	border-color: #ccc;
+}
+nav .nav_list .mine_dropdown{
+	width: 280px;
+	height: 236px;
+	border: 1px solid #ccc;
+	border-top: none;
+	position: absolute;
+	top:31px;
+	left: -1px;
+	background-color: #fff;
+	display: none;
+}
+
+nav .nav_list .userinfo{
+	width: 265px;
+	height: 60px;
+	padding: 10px 0 10px 15px;
+}
+nav .nav_list .mine_dropdown .userinfo img{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	float: left;
+}
+nav .nav_list .userinfo .login{
+	display: inline-block;
+	font-weight: bold;
+}
+nav .nav_list .userinfo div{
+	height: 17px;
+	line-height: 17px;
+}
+nav .nav_list .deta{	
+	display: inline-block;
+	margin: 5px 0 10px 0;
+	padding-left: 15px;
+}
+nav .nav_list .deta ul{
+	display: inline-block;
+	width: 126px;
+}
+nav .nav_list .deta li{
+	height: 24px;
+	line-height: 24px;
+}
+nav .nav_list .footsteps{
+	height: 40px;
+	line-height: 40px;
+}
+nav .nav_list .footsteps span{
+	color: #666;
+	margin-left: 15px;
+}
+nav .nav_list .footsteps b{
+	float: right;
+	margin-right: 15px;
+}
+nav .nav_list .service{
+	position: relative;
+	border: 1px solid #e3e4e5;
+	border-bottom: none;
+}
+nav .nav_list .service:hover{
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+nav .nav_list .service .ser_dropdown{
+	width: 170px;
+	height: 180px;
+	padding: 10px 0;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #fff;
+	position: absolute;
+	top:31px;
+	left: -96px;
+	display: none;
+}
+nav .nav_list .ser_dropdown>div{
+	display: inline-block;
+}
+nav .nav_list .ser_dropdown>div .items{
+	float: left;
+	height: 24px;
+	line-height: 24px;
+}
+nav .nav_list .ser_dropdown>div .items_title{
+	font-weight: bold;
+	color: #666666;
+	height: 24px;
+	line-height: 24px;
+}
+nav .nav_list .ser_dropdown hr{
+	margin: 3px 0;
+}
+
+nav .nav_list .nav_nav{
+	position: relative;
+	border: 1px solid #e3e4e5;
+	border-bottom: none; 
+}
+nav .nav_list .nav_nav:hover{
+	border-color: #ccc;
+	background-color: #fff;
+}
+nav .nav_list .nav_nav .nav_dropdown{
+	width: 1200px;
+	height: 149px;
+	padding: 15px 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top:none;
+	position: absolute;
+	top: 31px;
+	left: -1127px;
+	//display: none;
+}
+nav .nav_list .nav_dropdown .nav_theme{
+	width: 340px;
+	height: 149px;
+	padding-left: 20px;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+nav .nav_list .nav_dropdown .items_title{
+	font-weight: bold;
+	color: #666;
+	margin-left: 7px;
+}
+nav .nav_list .nav_dropdown .nav_theme .items,.nav_channel .items,.nav_life .items,.nav_more .items{
+	display: inline-block;
+	float: left;
+	width: 85px;
+	height: 24px;
+	line-height: 24px;
+}
+nav .nav_list .nav_dropdown .nav_channel,.nav_life,.nav_more{
+	width: 255px;
+	height: 149px;
+	padding-left: 20px;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+nav .nav_list .nav_dropdown .nav_more{
+	border-right: none;
+}
+nav .nav_list .nav_dropdown .items a{
+	display: inline-block;
+	width: 85px;
+}
+
+
