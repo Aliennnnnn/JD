@@ -2,11 +2,11 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-19 21:32:08
+* @Last Modified time: 2016-11-20 22:54:46
 */
 
 /*样式重置*/
-body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,hr,th,td,select{ 
+*{ 
 	margin:0;
 	padding:0;
 }
@@ -47,7 +47,7 @@ nav{
 	height: 31px;
 	background-color: #e3e4e5;
 }
-nav .main{
+nav .nav_main{
 	width: 1190px;
 	height: 31px;
 	margin: 0 auto;
@@ -56,7 +56,17 @@ nav .logo{
 	width: 190px;
 	height: 31px;
 	float: left;
-	background-color: #fff;
+	background-color: #fff;	
+}
+nav .logo .logo_1{
+	box-shadow: -3px 0 10px rgba(0,0,0,.2);
+	-webkit-box-shadow: -3px 0 10px rgba(0,0,0,.2);
+	-moz-box-shadow: -3px 0 10px rgba(0,0,0,.2);
+}
+nav .logo .logo_2{
+	box-shadow: 3px 0 10px rgba(0,0,0,.2);
+	-webkit-box-shadow: 3px 0 10px rgba(0,0,0,.2);
+	-moz-box-shadow: 3px 0 10px rgba(0,0,0,.2);
 }
 nav .address{
 	color: #999999;
@@ -78,7 +88,7 @@ nav .address .add_show a{
 	margin-left: 24px;
 }
 nav .address .add_dropdown{
-	//display: none;
+	display: none;
 	width: 300px;
 	height: 196px;
 	border: 1px solid #ccc;
@@ -106,11 +116,8 @@ nav .address .add_dropdown .active{
 	background-color: #F10215;
 	color: #fff;
 }
-nav .nav_list{
-	position: absolute;
-	top:0;
-	left: 722px;
-	margin-left: 50px;
+nav .nav_list{	
+	float: right;
 	height: 31px;
 	line-height: 31px;
 }
@@ -250,7 +257,7 @@ nav .nav_list .nav_nav:hover{
 	background-color: #fff;
 }
 nav .nav_list .nav_nav .nav_dropdown{
-	width: 1200px;
+	width: 1188px;
 	height: 149px;
 	padding: 15px 0;
 	background-color: #fff;
@@ -258,8 +265,8 @@ nav .nav_list .nav_nav .nav_dropdown{
 	border-top:none;
 	position: absolute;
 	top: 31px;
-	left: -1127px;
-	//display: none;
+	left: -1115px;
+	display: none;
 }
 nav .nav_list .nav_dropdown .nav_theme{
 	width: 340px;
@@ -295,4 +302,252 @@ nav .nav_list .nav_dropdown .items a{
 	width: 85px;
 }
 
+/*search*/
+.search{
+	margin-left: 516px;
+	margin-top: 25px;
+	position: relative;
+}
+.search input{
+	width: 490px;
+	height: 25px;
+	padding: 4px;
+	border: 1px solid #F10215;
+}
+.search button{
+	width: 50px;
+	height: 35px;
+	background-color: #F10215;
+	border: none;
+	margin-left: -4px;
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	left: 490px;
+}
+.search div{
+	float: left;
+	display: inline-block;
+	margin-right: 8px;
+	margin-top: 4px;
+}
+.search .style_red a{
+	color: #f10214;
+}
+.search div div a:hover{
+	color: #c81623;
+}
 
+/*cart*/
+.cart{
+	float: right;
+	position: relative;	
+	left: 190px;
+	top:-47px;
+}
+.cart .cart_show{
+	width: 188px;
+	height: 33px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	line-height: 33px;
+}
+.cart .cart_show img{
+	margin-left: 52px;
+	margin-top: 8px;
+}
+.cart .cart_show a{
+	color:#f10214;
+}
+.cart .cart_show:hover{
+	border-bottom: 1px solid #fff;
+}
+.cart .nogoods{
+	width: 248px;
+	height: 49px;
+	padding-left: 30px;
+	line-height: 49px;
+}
+.cart .cart_dropdown{
+	width: 278px;
+	height: 49px;
+	position: absolute;
+	top: 33px;
+	left: -120px;
+	padding: 10px 15px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin-top: -1px;
+	z-index: 1;
+	display: none;
+}
+.cart .cart_dropdown b{
+	float: left;
+	width: 56px;
+	height: 49px;
+
+	background-image: url(http://img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png);
+}
+.cart .cart_dropdown span{
+	color: #999;
+}
+.cart .cart_show b{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	position: absolute;
+	top:5px;
+	text-align: center;
+	border-radius: 7px;
+	background-color: #F10215;
+	color: #fff;
+	font-weight: bold;
+}
+
+/*分类*/
+.kind{
+	margin-left: -100px;
+}
+.kind div div{
+	margin-left: 20px;
+	margin-top: -10px;
+}
+.kind .line{
+	color: #ccc;
+	font-size: 12px;
+	margin-right: 0;
+}
+.kind a{
+	color: #666;
+	font-weight: 700;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+}
+.kind a:hover{
+	color: #c81623;
+}
+.kind span{
+	float: left;
+}
+
+/*主体*/
+.main{
+	width: 1190px;
+	height: 2000px;
+	margin-left: -319px;
+	position: relative;
+	top: -9px;
+}
+/*分类导航*/
+.main .topmenu{
+	width: 190px;
+	height: 450px;
+	background-color: #6C6669;
+	position: relative;
+	padding: 15px 0;
+}
+.main .topmenu>li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 12px;
+}
+.main .topmenu>li:hover{
+	background-color: #999395;
+}
+.main .topmenu>li a:hover{
+	color: #c81623;
+}
+.main .topmenu>li>a,.main .topmenu>li>span{
+	color: #fff;
+	font-size: 14px;
+}
+
+.main .submenu{
+	position: absolute;
+	left: 190px;
+	top: -4px;
+	width: 998px;
+	padding: 20px 0 10px 0;
+	background-color: #fff;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+}
+.main .sub_1,.sub_2{
+	display: none;
+}
+
+.main .submenu .left_menu .l_title{
+	padding-left: 20px;
+
+}
+.main .submenu .left_menu .l_title li{
+	float: left;	
+	padding: 0 10px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #7c7171;
+	margin-right: 10px;
+}
+.main .submenu .left_menu .l_title li a{
+	color: #fff;
+}
+.main .submenu .left_menu dl{
+	padding-left: 20px; 
+	display: block;
+	float: left;
+}
+.main .submenu .left_menu .dl_first{
+	padding-top: 15px;
+}
+.main .submenu .left_menu dt,.main .submenu .left_menu dd{
+	display: inline-block;
+	padding: 3px 0;
+}
+.main .submenu .left_menu dt{
+	font-weight: 700;
+	width: 60px;
+	white-space: nowrap;
+	text-align: right;
+	margin-right: 10px;
+	vertical-align: top; 
+}
+.main .submenu .left_menu dt a{
+	color: #666;	
+}
+.main .submenu .left_menu dd{
+	width: 710px;	
+	border-bottom: 1px solid #e0e0e0;	
+}
+.main .submenu .left_menu dd a{
+	border-left: 1px solid #e0e0e0;
+	height: 16px;
+	line-height: 16px;
+	padding: 0 10px;	
+	color: #666;
+}
+.main .submenu .left_menu .l_title li:hover{
+	background-color: #5c5251;
+}
+.main .submenu .left_menu dd a:hover{
+	color: #c81623;
+}
+.main .submenu .left_menu dt a:hover{
+	color: #c81623;
+}
+
+.main .submenu .right_menu{
+	width: 198px;
+	position: absolute;
+	right: -20px;
+	top:16px;
+}
+.main .submenu .right_menu .r_top img{
+	width: 83px;
+	height: 35px;
+	margin-top: 1px;
+	margin-right: -2px;
+}
+.main .submenu .right_menu .r__bottom{
+	margin-top: 4px;
+}

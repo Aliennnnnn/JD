@@ -6,13 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
+	<!--导航栏-->
 	<nav>
-		<div class="main">
+		<div class="nav_main">
 			<div class="logo">
-				占位
+				<div class="logo_1">
+					<div class="logo_2">
+						<img src="images/logo.png">
+					</div>
+				</div>
 			</div>
 			<div class="address">
-				<div class="add_show"><a href="#">北京</a></div>
+				<div class="add_show">
+					<a href="#">北京</a>
+				</div>
 				<div class="add_dropdown">
 					<div class="item"><a class="active" href="#">北京</a></div>
 					<div class="item"><a href="#">上海</a></div>
@@ -188,9 +195,645 @@
 						</div>
 					</div>
 				</li>
-			</ul>
-	
+			</ul>	
 		</div>
 	</nav>
+	
+	<!--搜索框-->
+	<form class="search">
+		<input type="text" name="search" >
+		<button>
+			<img src="images/search.png">
+		</button>
+		<div class="tips">
+			<div class="style_red"><a href="#">1元秒杀</a></div>
+			<div><a href="#">低至9.9</a></div>
+			<div><a href="#">米兰家具展</a></div>
+			<div><a href="#">免费抽奖</a></div>
+			<div><a href="#">199减100</a></div>
+			<div><a href="#">卫生巾</a></div>
+			<div><a href="#">玩具车</a></div>
+			<div><a href="#">199减100</a></div>			
+			<div><a href="#">加绒裤男</a></div1>
+		</div>
+	</form>
+	
+	<!--购物车-->
+	<div class="cart">		
+			<div class="cart_show">
+				<img src="images/cart_logo.png">
+				<span><a href="#">我的购物车</a></span>
+				<b>0</b>
+			</div>
+			<div class="cart_dropdown">
+				<div class="nogoods">
+					<b></b>
+					<span>购物车中还没有商品，赶紧选购吧！</span>
+				</div>
+			</div>
+	</div>
+
+	<!--分类-->
+	<div class="kind">
+		<div class="kind_1">
+			<div><a href="#">秒杀</a></div>
+			<div><a href="#">优惠券</a></div>
+			<div><a href="#">闪购</a></div>
+			<div><a href="#">拍卖</a></div>
+		</div>
+		<div class="line">|</div>
+		<div class="kind_2">			
+			<div><a href="#">服装城</a></div>
+			<div><a href="#">京东超市</a></div>
+			<div><a href="#">生鲜</a></div>
+			<div><a href="#">全球购</a></div>
+		</div>
+		<div class="line">|</div>
+		<div class="kind_3">
+			<div>
+				<a href="#">京东金融</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main">
+		<!--分类导航-->
+		<ul class="topmenu">
+			<li>
+				<a href="#">家用电器</a>
+				<div class="submenu sub_1">
+					<div class="left_menu">
+						<ul class="l_title">
+							<li><a href="#">家电城 ></a></li>
+							<li><a href="#">品牌日 ></a></li>
+							<li><a href="#">智能生活馆 ></a></li>
+							<li><a href="#">京东净化馆 ></a></li>
+							<li><a href="#">京东帮服务店 ></a></li>
+							<li><a href="#">家电众筹馆 ></a></li>
+						</ul>
+						<dl class="dl_first">
+							<dt><a href="#">电视 ></a></dt>
+							<dd>
+								<a href="#">合资品牌</a>
+								<a href="#">国产品牌</a>
+								<a href="#">互联网品牌</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#">空调 ></a></dt>
+							<dd>
+								<a href="#">壁挂式空调</a>
+								<a href="#">柜式空调</a>
+								<a href="#">中央空调</a>
+								<a href="#">空调配件</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">洗衣机 ></a>
+								<dd>
+									<a href="#">滚筒洗衣机</a>
+									<a href="#">洗烘一体机</a>
+									<a href="#">波轮洗衣机</a>
+									<a href="#">迷你洗衣机</a>
+									<a href="#">洗衣机配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">冰箱 ></a>
+								<dd>
+									<a href="#">多门</a>
+									<a href="#">对开门</a>
+									<a href="#">三门</a>
+									<a href="#">双门</a>
+									<a href="#">冰柜/冷吧</a>
+									<a href="#">酒柜</a>
+									<a href="#">冰箱配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">厨卫大电 ></a>
+								<dd>
+									<a href="#">油烟机</a>
+									<a href="#">燃气灶</a>
+									<a href="#">烟灶套装</a>
+									<a href="#">消毒柜</a>
+									<a href="#">洗碗机</a>
+									<a href="#">电热水器</a>
+									<a href="#">燃气热水器</a>
+									<a href="#">嵌入式厨电</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">厨卫小电 ></a>
+								<dd>
+									<a href="#">电饭煲</a>
+									<a href="#">微波炉</a>
+									<a href="#">电烤箱</a>
+									<a href="#">电磁炉</a>
+									<a href="#">电压力锅</a>
+									<a href="#">豆浆机</a>
+									<a href="#">咖啡机</a>
+									<a href="#">面包机</a>
+									<a href="#">榨汁机</a>
+									<a href="#">料理机</a>
+									<a href="#">电饼铛</a>
+									<a href="#">养生壶/煎药壶</a>
+									<a href="#">酸奶机</a>
+									<a href="#">煮蛋器</a>
+									<a href="#">电热水壶/热水瓶</a>
+									<a href="#">电炖锅</a>
+									<a href="#">多用途锅</a>
+									<a href="#">电烧烤炉</a>
+									<a href="#">电热饭盒</a>
+									<a href="#">其他厨房电器</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">生活电器 ></a>
+								<dd>
+									<a href="#">取暖电器</a>
+									<a href="#">吸尘器</a>
+									<a href="#">净化器</a>
+									<a href="#">扫地机器人</a>
+									<a href="#">加湿器</a>
+									<a href="#">挂烫机/熨斗</a>
+									<a href="#">电风扇</a>
+									<a href="#">冷风扇</a>
+									<a href="#">插座</a>
+									<a href="#">电话机</a>
+									<a href="#">饮水机</a>
+									<a href="#">净水器</a>
+									<a href="#">除湿机</a>
+									<a href="#">干衣机</a>
+									<a href="#">清洁机</a>
+									<a href="#">收录/音机</a>
+									<a href="#">其他生活电器</a>
+									<a href="#">生活电器配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">个护健康 ></a>
+								<dd>
+									<a href="#">剃须刀</a>
+									<a href="#">口腔护理</a>
+									<a href="#">电吹风</a>
+									<a href="#">美容器</a>
+									<a href="#">卷/直发器</a>
+									<a href="#">理发器</a>
+									<a href="#">剃/脱毛器</a>
+									<a href="#">足浴盆</a>
+									<a href="#">健康秤/厨房秤</a>
+									<a href="#">按摩器</a>
+									<a href="#">按摩椅</a>
+									<a href="#">计步器/脂肪检测仪</a>
+									<a href="#">其他健康电器</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">家庭影音 ></a>
+								<dd>
+									<a href="#">家庭影院</a>
+									<a href="#">迷你音响</a>
+									<a href="#">DVD</a>
+									<a href="#">电视影音配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">进口电器 ></a>
+								<dd>
+									<a href="#">进口电器</a>
+								</dd>
+							</dt>
+						</dl>
+					</div>
+					<div class="right_menu">
+						<div class="r_top">
+							<a href="#">
+								<img src="http://img10.360buyimg.com/vclist/jfs/t2176/358/849877519/2001/3cb2806f/562f4971Na5379aba.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img11.360buyimg.com/vclist/jfs/t3211/96/3882705424/5364/76e60d4a/57f9fa89N6ddb14fc.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img12.360buyimg.com/vclist/jfs/t2854/139/1362485568/3897/5b74f770/573c0ed1Nee530fec.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img13.360buyimg.com/vclist/jfs/t2587/271/1840897889/3013/d15dee81/574c0755Nc8f19944.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img14.360buyimg.com/vclist/jfs/t2725/28/3944498781/5968/8b51c8de/57a075b6Nd3e293c2.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img10.360buyimg.com/vclist/jfs/t820/181/3448454/2372/cbfc2389/54d9ef34N7cc61f4c.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img11.360buyimg.com/vclist/jfs/t3799/327/1571305090/2400/80acd0c6/582ae325Ne55250b9.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img12.360buyimg.com/vclist/jfs/t3097/264/1897398812/3440/c0aba60c/57d6820aN3ebcb677.jpg!q90">
+							</a>
+						</div>
+						<div class="r_bottom">
+							<a href="#">
+								<img src="https://img13.360buyimg.com/vclist/jfs/t3847/256/301919249/9285/8afba632/580d6309N3dc31886.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="https://img14.360buyimg.com/vclist/jfs/t3616/72/1599021318/3946/cacd91bd/582c89d5N8fc64450.jpg!q90">
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="#">手机</a><span> / </span><a href="#">运营商</a><span> / </span><a href="#">数码</a>
+				<div class="submenu sub_2">
+					<div class="left_menu">
+						<ul class="l_title">
+							<li><a href="#">玩3C ></a></li>
+							<li><a href="#">手机频道 ></a></li>
+							<li><a href="#">网上营业厅 ></a></li>
+							<li><a href="#">配件城 ></a></li>
+							<li><a href="#">影像Club ></a></li>
+							<li><a href="#">以旧换新 ></a></li>
+						</ul>
+						<dl class="dl_first">
+							<dt><a href="#">手机通讯 ></a></dt>
+							<dd>
+								<a href="#">手机</a>
+								<a href="#">对讲机</a>
+								<a href="#">以旧换新</a>
+								<a href="#">手机维修</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#">运营商 ></a></dt>
+							<dd>
+								<a href="#">充话费/流量</a>
+								<a href="#">170选号</a>
+								<a href="#">合约机</a>
+								<a href="#">办套餐</a>
+								<a href="#">选号码</a>
+								<a href="#">固话宽带</a>
+								<a href="#">京东通信</a>
+								<a href="#">中国移动</a>
+								<a href="#">中国联通</a>
+								<a href="#">中国电信</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">手机配件 ></a>
+								<dd>
+									<a href="#">手机壳</a>
+									<a href="#">贴膜</a>
+									<a href="#">手机存储卡</a>
+									<a href="#">数据线</a>
+									<a href="#">充电器</a>
+									<a href="#">手机耳机</a>
+									<a href="#">创意配件</a>
+									<a href="#">手机饰品</a>
+									<a href="#">手机电池</a>
+									<a href="#">苹果周边</a>
+									<a href="#">移动电源</a>
+									<a href="#">蓝牙耳机</a>
+									<a href="#">手机支架</a>
+									<a href="#">车载配件</a>
+									<a href="#">手机电池</a>
+									<a href="#">拍照配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">影像摄像 ></a>
+								<dd>
+									<a href="#">数码相机</a>
+									<a href="#">单电/微单相机</a>
+									<a href="#">单反相机</a>
+									<a href="#">拍立得</a>
+									<a href="#">运动相机</a>
+									<a href="#">摄像机</a>
+									<a href="#">镜头</a>
+									<a href="#">户外器材</a>
+									<a href="#">影棚器材</a>
+									<a href="#">冲印服务</a>
+									<a href="#">数码相框</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">数码配件 ></a>
+								<dd>
+									<a href="#">存储卡</a>
+									<a href="#">三脚架/云台</a>
+									<a href="#">相机包</a>
+									<a href="#">滤镜</a>
+									<a href="#">闪光灯/手柄</a>
+									<a href="#">相机清洁/贴膜</a>
+									<a href="#">机身附件</a>
+									<a href="#">镜头附件</a>
+									<a href="#">读卡器</a>
+									<a href="#">支架</a>
+									<a href="#">电池/充电器</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">影音娱乐 ></a>
+								<dd>
+									<a href="#">智能手环</a>
+									<a href="#">智能手表</a>
+									<a href="#">智能眼镜</a>
+									<a href="#">智能机器人</a>
+									<a href="#">运动跟踪器</a>
+									<a href="#">健康监测</a>
+									<a href="#">智能配饰</a>
+									<a href="#">智能家居</a>
+									<a href="#">体感车</a>
+									<a href="#">无人机</a>
+									<a href="#">其他配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">电子教育 ></a>
+								<dd>
+									<a href="#">学生平板</a>
+									<a href="#">点读机/笔</a>
+									<a href="#">早教益智</a>
+									<a href="#">录音笔</a>
+									<a href="#">电纸书</a>
+									<a href="#">电子词典</a>
+									<a href="#">复读机</a>
+								</dd>
+							</dt>
+						</dl>
+						
+					</div>
+					<div class="right_menu">
+						<div class="r_top">
+							<a href="#">
+								<img src="http://img10.360buyimg.com/vclist/jfs/t2242/178/2511566210/2362/1b27a3c/5708334dN24ec1feb.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img11.360buyimg.com/vclist/jfs/t2716/294/2087419235/3955/f101ffc5/5757bb0aNb53cb183.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img12.360buyimg.com/vclist/jfs/t2272/318/2089033366/4237/3d96b593/56a72d4fN4d1b42fe.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img13.360buyimg.com/vclist/jfs/t2803/219/1835587342/6900/5a57c384/574ba6beNb1d8e00d.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img14.360buyimg.com/vclist/jfs/t2104/198/2166347251/1610/4c1220f1/56f4d7c6Nfd0e9c92.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img10.360buyimg.com/vclist/jfs/t1927/223/2520384166/3374/306e46bc/56da5bb0N016b7c32.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img11.360buyimg.com/vclist/jfs/t1699/142/716002172/16275/c4c2565b/55b1d930Nf0bfccbb.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img12.360buyimg.com/vclist/jfs/t3553/345/1430479212/23306/40af750d/5823fed8N3782e910.jpg!q90">
+							</a>
+						</div>
+						<div class="r_bottom">
+							<a href="#">
+								<img src="https://img13.360buyimg.com/vclist/jfs/t3610/257/1658053045/13685/ce842576/582e7c15N47dd69dd.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="https://img14.360buyimg.com/vclist/jfs/t3598/200/1500106495/4739/fd17766c/5827d359Nc2b25797.jpg!q90">
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="#">电脑办公</a>
+				<div class="submenu sub_3">
+					<div class="left_menu">
+						<ul class="l_title">
+							<li><a href="#">玩3C ></a></li>
+							<li><a href="#">本周热卖 ></a></li>
+							<li><a href="#">游戏部落 ></a></li>
+							<li><a href="#">GAME+ ></a></li>
+							<li><a href="#">装机大师 ></a></li>
+							<li><a href="#">办公生活馆 ></a></li>
+						</ul>
+						<dl class="dl_first">
+							<dt><a href="#">电脑整机 ></a></dt>
+							<dd>
+								<a href="#">笔记本</a>
+								<a href="#">游戏本</a>
+								<a href="#">平板电脑</a>
+								<a href="#">平板电脑配件</a>
+								<a href="#">台式机</a>
+								<a href="#">一体机</a>
+								<a href="#">服务器/工作站</a>
+								<a href="#">笔记本配件</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#">电脑配件 ></a></dt>
+							<dd>
+								<a href="#">显示器</a>
+								<a href="#">CPU</a>
+								<a href="#">主板</a>
+								<a href="#">硬盘</a>
+								<a href="#">内存</a>
+								<a href="#">机箱</a>
+								<a href="#">电源</a>
+								<a href="#">散热器</a>
+								<a href="#">刻录机/光驱</a>
+								<a href="#">声卡/拓展卡</a>
+								<a href="#">装机配件</a>
+								<a href="#">显卡</a>
+								<a href="#">SSD固态硬盘</a>
+								<a href="#">组装电脑</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">外设产品 ></a>
+								<dd>
+									<a href="#">鼠标</a>
+									<a href="#">键盘</a>
+									<a href="#">键鼠套装</a>
+									<a href="#">网络仪表仪器</a>
+									<a href="#">U盘</a>
+									<a href="#">移动硬盘</a>
+									<a href="#">鼠标垫</a>
+									<a href="#">摄像头</a>
+									<a href="#">线缆</a>
+									<a href="#">手写板</a>
+									<a href="#">硬盘盒</a>
+									<a href="#">电脑工具</a>
+									<a href="#">电脑清洁</a>
+									<a href="#">UPS电源</a>
+									<a href="#">插座</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">游戏设备 ></a>
+								<dd>
+									<a href="#">游戏机</a>
+									<a href="#">游戏耳机</a>
+									<a href="#">手柄/方向盘</a>
+									<a href="#">游戏软件</a>
+									<a href="#">游戏周边</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">网络产品 ></a>
+								<dd>
+									<a href="#">路由器</a>
+									<a href="#">网络机顶盒</a>
+									<a href="#">交换机</a>
+									<a href="#">网络存储</a>
+									<a href="#">网卡</a>
+									<a href="#">4G/3G上网</a>
+									<a href="#">网络配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">办公设备 ></a>
+								<dd>
+									<a href="#">摄影机</a>
+									<a href="#">摄影配件</a>
+									<a href="#">多功能一体机</a>
+									<a href="#">打印机</a>
+									<a href="#">传真设备</a>
+									<a href="#">验钞/点钞机</a>
+									<a href="#">扫描设备</a>
+									<a href="#">复合机</a>
+									<a href="#">碎纸机</a>
+									<a href="#">考勤机</a>
+									<a href="#">收银机</a>
+									<a href="#">会议视频音频</a>
+									<a href="#">保险柜</a>
+									<a href="#">装订/封装机</a>
+									<a href="#">安防监控</a>
+									<a href="#">办公家具</a>
+									<a href="#">白板</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">文具耗材 ></a>
+								<dd>
+									<a href="#">硒鼓/墨粉</a>
+									<a href="#">墨盒</a>
+									<a href="#">色带</a>
+									<a href="#">纸类</a>
+									<a href="#">办公文具</a>
+									<a href="#">学生文具</a>
+									<a href="#">文件管理</a>
+									<a href="#">本册/便签</a>
+									<a href="#">计算器</a>
+									<a href="#">笔类</a>
+									<a href="#">画具画材</a>
+									<a href="#">财会用品</a>
+									<a href="#">刻录碟片/附件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">服务产品 ></a>
+								<dd>
+									<a href="#">延保服务</a>
+									<a href="#">上门安装</a>
+									<a href="#">维修保养</a>
+									<a href="#">电脑软件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">家庭影音 ></a>
+								<dd>
+									<a href="#">家庭影院</a>
+									<a href="#">迷你音响</a>
+									<a href="#">DVD</a>
+									<a href="#">电视影音配件</a>
+								</dd>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">进口电器 ></a>
+								<dd>
+									<a href="#">进口电器</a>
+								</dd>
+							</dt>
+						</dl>
+					</div>
+					<div class="right_menu">
+						<div class="r_top">
+							<a href="#">
+								<img src="http://img10.360buyimg.com/vclist/jfs/t1597/87/558594419/2920/280f74e3/5595fa39N042df605.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http:////img11.360buyimg.com/vclist/jfs/t1849/11/229873582/2374/1614f087/55f7d119N22971ef4.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img12.360buyimg.com/vclist/jfs/t2665/196/1934035328/3743/e9622f8b/5750e17cN1911435c.png!q90">
+							</a>
+							<a href="#">
+								<img src="http://img13.360buyimg.com/vclist/jfs/t2392/171/1444239380/2553/414b3462/56a6d27cNbb9b4a77.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img14.360buyimg.com/vclist/jfs/t997/185/604499623/5230/1e1ca58d/5534f4d6N6cf59e34.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img10.360buyimg.com/vclist/jfs/t886/333/860878834/3381/2c9951b5/55506d61Nf95b4254.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img11.360buyimg.com/vclist/jfs/t2308/99/1345423357/2409/b914759/564a8df2Nbab8fdab.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="http://img12.360buyimg.com/vclist/jfs/t1690/104/484339689/3326/59208081/55a5b5baN89a65ec2.jpg!q90">
+							</a>
+						</div>
+						<div class="r_bottom">
+							<a href="#">
+								<img src="https://img13.360buyimg.com/vclist/jfs/t3349/222/1507911539/11451/4b850f10/58291768Nd4ce9983.jpg!q90">
+							</a>
+							<a href="#">
+								<img src="https://img14.360buyimg.com/vclist/jfs/t3364/4/1683690932/16158/d4d2f3e3/582e7469Nb737a95d.jpg!q90">
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
 </body>
 </html>
