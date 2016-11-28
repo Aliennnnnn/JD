@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-27 21:13:11
+* @Last Modified time: 2016-11-28 22:07:03
 */
 
 /*样式重置*/
@@ -941,8 +941,8 @@ nav .nav_list .nav_dropdown .items a{
 	top: 0;
 	text-align: center;
 }
-.seckill .box_bd .sk_item .sk_item_pic{
-
+.seckill .box_bd .sk_item .sk_item_tag{
+	z-index: 100;
 }
 .seckill .box_bd .sk_item .sk_item_tag span{
 	color: #fff;
@@ -951,6 +951,11 @@ nav .nav_list .nav_dropdown .items a{
 	position: relative;
 	top: -12px;
 }
+.seckill .box_bd .sk_item .sk_item_pic .sk_item_pic_lk img{
+	position: relative;
+	z-index: 1;
+}
+
 .seckill .box_bd .sk_item .sk_item_name{
 	color: #999;
 	display: block;
@@ -1120,7 +1125,7 @@ nav .nav_list .nav_dropdown .items a{
 }
 .fbt .box_bd .find_item img{
 	position: absolute;
-	right: 22px;
+	left: 96px;
 	top: 36px;
 }
 .fbt .box_bd .find_item2,.fbt .box_bd .find_item4,.fbt .box_bd .find_item6{
@@ -1177,6 +1182,7 @@ nav .nav_list .nav_dropdown .items a{
 	line-height: 18px;
 	padding: 6px 0 7px;
 	margin-left: 10px;
+	position: relative;
 } 
 .fbt .top .box_bd .top_tab_head .top_tab_head_item{
 	display: inline-block;
@@ -1190,6 +1196,14 @@ nav .nav_list .nav_dropdown .items a{
 	margin-left: -4px;
 	padding-bottom: 4px; 
 } 
+.fbt .top .box_bd .top_tab_active{
+	background: #f10214 none repeat scroll 0 0;
+	height: 2px;
+	position: absolute;
+	left: 5px;
+	top: 27px;
+	width: 58px;
+}
 .fbt .top .box_bd .top_tab_content .top_tab_content_item{
 	display: none;
 }

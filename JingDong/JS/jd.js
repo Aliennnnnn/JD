@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-25 16:13:47
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-27 22:16:07
+* @Last Modified time: 2016-11-28 22:11:19
 */
 
 'use strict';
@@ -12,13 +12,22 @@ $(function(){
 	dropdown($('.mine_jd'),$('.mine_dropdown'));	
 	dropdown($('.service'),$('.ser_dropdown'));	
 	dropdown($('.nav_nav'),$('.nav_dropdown'));	
-	dropdown($('.address'),$('.add_dropdown'));	
+	dropdown($('.address'),$('.add_dropdown'));
+	dropdown($('.cart'),$('.cart_dropdown'));
 
 	//轮播图
 	carousel();
 
 	//选项卡切换
-	handover()
+	handover();
+
+	//图片上下移动
+	moveUD($('.sk_item_pic_lk'));
+
+	//图片左右移动
+	moveLR($('.moveLR'));
+
+	ho($('.top_tab_head'))
 });
 
 
@@ -124,8 +133,57 @@ function handover(){
 }
 
 //图片上下移动函数
-function moveUD(pic){
+function moveUD(e1){	
+	$(e1).hover(
+		function(){
+			var pic = $(this).find('img')
+			$(pic).stop().animate({
+				'top':'-7px'
+			},350);
+		},
+		function(){
+			var pic = $(this).find('img')
+			$(pic).stop().animate({
+				'top':'0px'
+			},350);
+		}
+	)
+}
 
+//图片左右移动函数
+function moveLR(e1){	
+	$(e1).hover(
+		function(){
+			var pic = $(this).find('img');
+			var l = pic.position().left;
+			$(pic).css({
+				'position':'absolute'
+			})
+			$(pic).stop().animate({
+				'left': (-6+l)+'px'
+			},400);
+		},
+		function(){
+			var pic = $(this).find('img');
+			var l = pic.position().left;
+			$(pic).stop().animate({
+				'left': (6+l)+'px'
+			},400);
+		}
+	)
+}
+
+//滑动选项卡切换
+function ho(e1){
+	var op =  $(e1).find('.top_tab_head_item');
+	op.mouseover(function(){
+		var index = $(this).index();
+		e1.find('.top_tab_active').stop().animate({
+			'left':5+index*74+'px'
+		},350);
+		e1.siblings('.top_tab_content').children().eq(index).addClass('top_tab_content_item_on')
+			.siblings().removeClass('top_tab_content_item_on')
+	});
 }
 
 
