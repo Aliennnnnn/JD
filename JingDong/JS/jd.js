@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-25 16:13:47
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-28 22:11:19
+* @Last Modified time: 2016-11-29 16:59:31
 */
 
 'use strict';
@@ -151,23 +151,25 @@ function moveUD(e1){
 }
 
 //图片左右移动函数
-function moveLR(e1){	
+function moveLR(e1){
+	var l;	
 	$(e1).hover(
 		function(){
 			var pic = $(this).find('img');
-			var l = pic.position().left;
+			var l1 = pic.position().left;
+			l = l1;
 			$(pic).css({
 				'position':'absolute'
 			})
 			$(pic).stop().animate({
-				'left': (-6+l)+'px'
+				'left': (-6+l1)+'px'
 			},400);
 		},
 		function(){
 			var pic = $(this).find('img');
-			var l = pic.position().left;
+
 			$(pic).stop().animate({
-				'left': (6+l)+'px'
+				'left': l+'px'
 			},400);
 		}
 	)
