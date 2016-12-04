@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-30 22:21:14
+* @Last Modified time: 2016-12-04 22:29:36
 */
 
 /*样式重置*/
@@ -446,7 +446,7 @@ nav .nav_list .nav_dropdown .items a{
 /*主体*/
 .main{
 	width: 1190px;
-	height: 4000px;
+	height: 8000px;
 	margin-left: -319px;
 	position: relative;
 	top: -9px;
@@ -1609,6 +1609,21 @@ nav .nav_list .nav_dropdown .items a{
 .J_f_lift .pt_home .pt_hd{
 	background-color: #a56741;
 }
+.J_f_lift .pt_read .pt_hd{
+	background-color: #756059;
+}
+.J_f_lift .pt_car .pt_hd{
+	background-color: #865454;
+}
+.J_f_lift .pt_game .pt_hd{
+	background-color: #6467a0;
+}
+.J_f_lift .pt_travel .pt_hd{
+	background-color: #5981a3;
+}
+.J_f_lift .pt_econ .pt_hd{
+	background-color: #5a7259;
+}
 .J_f_lift .grid_c1 .pt_hd h3{
 	color: #fff;
 	font-size: 22px;
@@ -1666,6 +1681,26 @@ nav .nav_list .nav_dropdown .items a{
 .J_f_lift .pt_home .pt_hd .pt_tags_item{
 	background-color: #b08061;
 	border-color: #c19369;
+}
+.J_f_lift .pt_read .pt_hd .pt_tags_item{
+	background-color: #897b75;
+	border-color: #9e8a84;
+}
+.J_f_lift .pt_car .pt_hd .pt_tags_item{
+	background-color: #987171;
+	border-color: #b48787;
+}
+.J_f_lift .pt_game .pt_hd .pt_tags_item{
+	background-color: #7c80af;
+	border-color: #9598cd;
+}
+.J_f_lift .pt_travel .pt_hd .pt_tags_item{
+	background-color: #6c90ab;
+	border-color: #82a5bc;
+}
+.J_f_lift .pt_econ .pt_hd .pt_tags_item{
+	background-color: #758975;
+	border-color: #78977a;
 }
 .J_f_lift .pt_hd .pt_tags_item:hover{
 	border-color: #fff;
@@ -1732,6 +1767,21 @@ nav .nav_list .nav_dropdown .items a{
 }
 .J_f_lift .pt_home .pt_bd .pt_bi_tit{
 	color: #a56741;
+}
+.J_f_lift .pt_read .pt_bd .pt_bi_tit{
+	color: #756059;
+}
+.J_f_lift .pt_car .pt_bd .pt_bi_tit{
+	color: #865454;
+}
+.J_f_lift .pt_game .pt_bd .pt_bi_tit{
+	color: #797BA0;
+}
+.J_f_lift .pt_travel .pt_bd .pt_bi_tit{
+	color: #599FCC;
+}
+.J_f_lift .pt_econ .pt_bd .pt_bi_tit{
+	color: #5a7259;
 }
 .J_f_lift .grid_c1 .pt_bd .pt_bi_item{
 	float: left;
@@ -1840,7 +1890,6 @@ nav .nav_list .nav_dropdown .items a{
 
 .J_f_lift .chn_col_1 .pt_bd_1{
 	float: left;
-
 }
 .J_f_lift .chn_col_1 .pt_bd_sep{
 	display: inline-block;
@@ -1851,3 +1900,114 @@ nav .nav_list .nav_dropdown .items a{
 	margin: 0 15px 0 10px;
 }
 
+.J_f_lift .grid_c1 .chn_col_3{
+	width: 390px;
+	float: left;
+	margin-right: 0px;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt{
+	width: 370px;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_hd{
+	width: 345px;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_bd{
+	width: 371px;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_bi_item{
+	border: none;
+	display: block;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_cover{
+	float: left;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_bi{
+	width: 188px;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_more_item:last-child{
+	float: left;
+	margin-right: 0;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_more_item:first-child{
+	float: left;
+	margin-right: 5px;
+}
+.J_f_lift .grid_c1 .chn_col_3 .pt_logo_item:last-child{
+	padding-right: 0;
+	border: none; 
+}
+
+/*购特色*/
+.entry_2{
+	margin-bottom: 30px;
+}
+.entry_2 .ftit{
+	
+}
+.entry_2 .entry_inner .entry_item{
+	display: inline-block;
+	margin-left: 6px;
+	position: relative;
+}
+.entry_2 .entry_inner .entry_item .entry_info{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	margin-bottom: 0 auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	opacity: 0.9;
+}
+.entry_2 .entry_inner .entry_item .entry_info h4{
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 6px;
+}
+.entry_2 .entry_inner .entry_item .entry_info p{
+	padding: 0 10px;
+	font-weight: 700;
+}
+
+/*more*/
+.more{
+	width: 1200px;
+}
+.more_item{
+	float: left;
+	margin: 0 0 10px 10px;
+}
+.more_item_lk{
+	display: block;
+	padding: 4px;
+	width: 220px;
+	height: 305px;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+.more_item_lk:hover{
+	border: 1px solid #f10214;
+}
+.more_item_lk:hover .more_info_name{
+	color: #c81623;
+}
+.more_item_lk .more_info{
+	padding: 10px;
+}
+.more_item_lk .more_info_name{
+	margin-bottom: 5px;
+	height: 35px;
+	overflow: hidden;
+	color: #666;
+}
+.more_item_lk .more_info_price{
+	font-size: 16px;
+	color: #f10214;
+}
+.more_item_lk .more_info_price i{
+	font-size: 12px;
+	font-weight: 400;
+	font-family: arial;
+	margin-right: 3px;
+}
