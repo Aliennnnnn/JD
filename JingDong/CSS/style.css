@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-12-04 22:29:36
+* @Last Modified time: 2016-12-05 22:38:55
 */
 
 /*样式重置*/
@@ -348,6 +348,7 @@ nav .nav_list .nav_dropdown .items a{
 	position: relative;	
 	left: 190px;
 	top:-47px;
+	z-index: 1;
 }
 
 .cart .cart_show img{
@@ -415,6 +416,8 @@ nav .nav_list .nav_dropdown .items a{
 /*分类*/
 .kind{
 	margin-left: -100px;
+	position: relative;
+	top: 22px;
 }
 .kind div{
 	float: left;
@@ -449,7 +452,7 @@ nav .nav_list .nav_dropdown .items a{
 	height: 8000px;
 	margin-left: -319px;
 	position: relative;
-	top: -9px;
+	top: 21px;
 }
 /*分类导航*/
 .main .topmenu{
@@ -769,13 +772,64 @@ nav .nav_list .nav_dropdown .items a{
 	width: 190px;
 	height: 195px;
 }
-.main .side_fun>ul{
-	width: 190px;
-	height: 24px;
-}
-.main .side_fun>ul li{
+.side_fun_sec{
+	width: 46px;
+	height: 55px;
+	padding-top: 14px;
 	float: left;
-	width: 47px;
+	text-align: center;
+}
+.side_fun_sec:hover span{
+	color: #C81623;
+}
+.border_right{
+	border-right: 1px solid #e6e6e6;
+}
+.border_tb{
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.side_fun_sec i{
+	background-image: url('http://misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png');
+	background-position: 0 -88px;
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+	display: block;	
+	margin: 0 auto;
+}
+.side_fun_sec2 i{
+	background-position: 0 -88px;
+}
+.side_fun_sec3 i{
+	background-position: 0 -44px;
+}
+.side_fun_sec4 i{
+	background-position: -44px -44px;
+}
+.side_fun_sec5 i{
+	background-position: -88px 0;
+}
+.side_fun_sec6 i{
+	background-position: -88px -44px;
+}
+.side_fun_sec7 i{
+	background-position: 0 0;
+}
+.side_fun_sec8 i{
+	background-position: -44px -88px;
+}
+.side_fun_sec9 i{
+	background-position: -88px -88px;
+}
+.side_fun_sec10 i{
+	background-position: -132px 0;
+}
+.side_fun_sec11 i{
+	background-position: -132px -88px;
+}
+.side_fun_sec12 i{
+	background-position: -44px 0;
 }
 .main .side_mobile{
 	width: 190px;
@@ -2010,4 +2064,249 @@ nav .nav_list .nav_dropdown .items a{
 	font-weight: 400;
 	font-family: arial;
 	margin-right: 3px;
+}
+
+/*footer*/
+#footer{
+	width: 1583px;
+	background-color: #EAEAEA;
+	display: block;
+	margin: 0;
+	float: left;
+	position: relative;
+	top: 541px;
+	left: -517px;
+	margin-top: 30px;
+}
+.mod_service{
+	padding: 30px 0;
+	border-bottom: 1px solid #dedede;
+}
+.mod_service_inner{
+	width: 1190px;
+	margin: 0 auto;
+}
+.mod_service_list{
+	overflow: hidden;
+	height: 42px;
+}
+.mod_service_item{
+	float: left;
+	width: 297px;
+}
+.mod_service_unit{
+	position: relative;
+	margin: 0 auto;
+	padding-left: 45px;
+	width: 180px;
+}
+.mod_service_tit{
+	display: inline-block;
+	width: 36px;
+	height: 42px;
+	background-image: url('http://misc.360buyimg.com/mtd/pc/index/home/images/ico_service.png');
+	background-position: 0 0;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.mod_service_tit2{
+	background-position: 0 -43px;
+}
+.mod_service_tit3{
+	background-position: 0 -86px;
+}
+.mod_service_tit4{
+	background-position: 0 -129px;
+}
+.mod_service_txt{
+	font-size: 18px;
+	font-weight: 700;
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	color: #444;
+}
+
+.mod_help{
+	padding: 20px 0;
+	border-bottom: 1px solid #dedede;	
+}
+.mod_help_inner{
+	width: 1190px;
+	margin: 0 auto;
+	height: 160px;
+}
+.mod_help_nav_list{
+	margin-left: 15px;
+}
+.mod_help_nav{
+	float: left;
+	width: 198px;
+	line-height: 22px;
+}
+.mod_help_nav_tit{
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #666;
+	margin-left: 15px;
+}
+.mod_help_nav_item a{
+	color: #666;
+}
+.mod_help_nav_item a:hover{
+	color: #C81623;
+}
+.mod_help_cover{
+	float: right;
+	width: 200px;
+	height: 150px;
+	background: url('http://misc.360buyimg.com/mtd/pc/index/home/images/ico_footer.png') no-repeat 0 0;
+}
+.mod_help_cover h5{
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.mod_help_cover p{
+	color: #666;
+}
+.mod_help_cover a{
+	float: right;
+	color: #666;
+}
+
+.mod_copyright{
+	width: 100%;
+}
+.mod_cr_inner{
+	width: 1190px;
+	margin: 0 auto;
+	padding: 15px 0;
+	text-align: center;
+}
+.mod_cr_links{
+	display: inline-block;
+}
+.mod_cr_list{
+
+}
+.mod_cr_item{
+	float: left;
+	height: 17px;
+	line-height: 17px;
+	padding: 0 10px;	
+}
+.mod_cr_item a{
+	color: #666;
+}
+.mod_cr_item a:hover{
+	color: #C81623;
+}
+.mod_cr_item:not(:last-child){
+	border-right: 1px solid #ccc;
+}
+
+.mod_cr_info{
+	width: 1190px;
+	height: 98px;
+	padding: 10px 0;
+	text-align: center;
+}
+.mod_cr_info_list{
+	height: 22px;
+	line-height: 22px;
+	display: inline-block;
+}
+.mod_cr_info_item{
+	float: left;
+	padding: 0 10px;
+	color: #999;
+}
+.mod_cr_info_item:not(:last-child){
+	border-right: 1px solid #ccc;
+}
+
+.mod_cr_auth_ico{
+	display: inline-block;
+	margin: 0 3px;
+	width: 103px;
+	height: 32px;
+	background-image: url('http://misc.360buyimg.com/mtd/pc/index/home/images/ico_footer.png');
+	background-position: 0 -151px;
+}
+.mod_cr_auth_ico2{
+	background-position: -104px -151px;
+}
+.mod_cr_auth_ico3{
+	background-position: 0 -184px;
+}
+.mod_cr_auth_ico4{
+	background-position: -104px -184px;
+}
+.mod_cr_auth_ico5{
+	background-position: 0 -217px;
+}
+.mod_cr_auth_ico6{
+	background-position: -104px -217px;
+}
+
+/*toolbar-right*/
+.toolbar_wrap{
+	height: 100%;
+	width: 0;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.toolbar_tabs{
+	position: absolute;
+	top: 50%;
+	left: -29px;
+	width: 35px;
+	margin-top: -61px;
+}
+.toolbar_tab{
+	width: 34px;
+	height: 35px;
+	margin-bottom: 1px;
+	cursor: pointer;
+	background-color: #767676;
+	border-radius: 2px;
+	position: relative;
+	z-index: 99;
+}
+.toolbar_tab:hover{
+	background-color: #C81623;
+}
+.toolbar_tab span{
+	display: block;
+	width: 70px;
+	height: 35px;
+	position: absolute;
+	left: -35px;
+	top: 0px;
+	text-align: center;
+	line-height: 34px;
+	z-index: 1;
+	background-color: #7a6e6e;
+	border-radius: 2px;
+}
+.tool_tab_i{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+.toolbar_tab i{
+	background-image: url('http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png');
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 35px;	
+	position: relative;
+	background-position: -88px -175px;
+	display: block;	
+	margin: auto auto;
+	z-index: 99;
 }
