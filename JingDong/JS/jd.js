@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-25 16:13:47
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-11-29 16:59:31
+* @Last Modified time: 2016-12-06 21:15:25
 */
 
 'use strict';
@@ -27,7 +27,13 @@ $(function(){
 	//图片左右移动
 	moveLR($('.moveLR'));
 
-	ho($('.top_tab_head'))
+	ho($('.top_tab_head'));
+
+	//顶部下拉搜索框
+	topSearch($('.search_fix'));
+
+	//左侧定位导航栏
+	posNav($('.left_nav'));
 });
 
 
@@ -132,7 +138,7 @@ function handover(){
 	});
 }
 
-//图片上下移动函数
+//图片上下移动函数--可用CSS3transition完成
 function moveUD(e1){	
 	$(e1).hover(
 		function(){
@@ -150,7 +156,7 @@ function moveUD(e1){
 	)
 }
 
-//图片左右移动函数
+//图片左右移动函数--可用CSS3transition完成
 function moveLR(e1){
 	var l;	
 	$(e1).hover(
@@ -186,6 +192,54 @@ function ho(e1){
 		e1.siblings('.top_tab_content').children().eq(index).addClass('top_tab_content_item_on')
 			.siblings().removeClass('top_tab_content_item_on')
 	});
+}
+
+//下拉顶部搜索栏
+function topSearch(e1){
+	$(window).scroll(function(){
+		var top = $(document).scrollTop();
+		var aimTop = 670;
+		if (top>aimTop) {
+			e1.slideDown(350);
+		} else{
+			e1.css({
+				'display':'none'
+			})
+		}
+	});
+}
+
+//左侧定位导航栏
+function posNav(e1){
+	$(window).scroll(function(){
+		var aimTop = 1560;
+		var top = $(document).scrollTop();
+		if (top>aimTop) {
+			e1.fadeIn('fast');
+		} else{
+			e1.fadeOut('fast');
+		}
+		var menu = $('.left_nav_list');
+		var items = $('.J_f_lift');
+		var currentId = ""; //当前所在楼层的Id
+
+		items.each(function(){
+			var itemTop = $(this).offset().top-50;
+			if (top > itemTop) {
+				currentId = '"#'+$(this).attr("id")+'"';
+			}else{
+				return false;
+			}
+		});
+
+		//给相应的楼层设置class
+		var currentLink = menu.find('.left_nav_item_act');
+		if (currentId && currentLink.attr("href") != currentId) {
+			currentLink.removeClass('left_nav_item_act');
+			menu.find('[href='+currentId+']').parent('.left_nav_item').addClass('left_nav_item_act');
+		}
+
+	})
 }
 
 

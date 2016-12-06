@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-12-05 22:38:55
+* @Last Modified time: 2016-12-06 21:24:57
 */
 
 /*样式重置*/
@@ -672,6 +672,9 @@ nav .nav_list .nav_dropdown .items a{
 	border-bottom: 1px solid #e6e6e6;
 	position: relative;
 }
+.main .sidebar .side_user .side_user_info{
+	margin-top: 15px;
+}
 .main .sidebar .side_user .side_user_info img{
 	width: 45px;
 	height: 45px;
@@ -699,6 +702,7 @@ nav .nav_list .nav_dropdown .items a{
 	position: absolute;
 	bottom: 17px;
 	left: 10px;	
+	cursor: pointer;
 }
 .main .sidebar .side_user .side_user_btn input:hover{
 	background-color: #e01222;
@@ -2263,7 +2267,14 @@ nav .nav_list .nav_dropdown .items a{
 .toolbar_tabs{
 	position: absolute;
 	top: 50%;
-	left: -29px;
+	left: -26px;
+	width: 35px;
+	margin-top: -61px;
+}
+.toolbar_tabs_2{
+	position: absolute;
+	bottom: 0;
+	left: -26px;
 	width: 35px;
 	margin-top: -61px;
 }
@@ -2271,33 +2282,42 @@ nav .nav_list .nav_dropdown .items a{
 	width: 34px;
 	height: 35px;
 	margin-bottom: 1px;
-	cursor: pointer;
-	background-color: #767676;
-	border-radius: 2px;
+	cursor: pointer;		
 	position: relative;
 	z-index: 99;
 }
-.toolbar_tab:hover{
-	background-color: #C81623;
-}
+
 .toolbar_tab span{
 	display: block;
 	width: 70px;
 	height: 35px;
 	position: absolute;
-	left: -35px;
+	left: 0px;
 	top: 0px;
+	color: #fff;
 	text-align: center;
 	line-height: 34px;
 	z-index: 1;
 	background-color: #7a6e6e;
 	border-radius: 2px;
+	transition: left 0.3s;
+}
+.toolbar_tab:hover span{
+	background-color: #C81623;
+	left: -68px;
 }
 .tool_tab_i{
 	position: absolute;
 	left: 0;
 	top: 0;
 	z-index: 99;
+	width: 34px;
+	height: 35px;
+	border-radius: 2px;
+	background-color: #767676;
+}
+.toolbar_tab:hover .tool_tab_i{
+	background-color: #C81623;
 }
 .toolbar_tab i{
 	background-image: url('http://static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png');
@@ -2308,5 +2328,136 @@ nav .nav_list .nav_dropdown .items a{
 	background-position: -88px -175px;
 	display: block;	
 	margin: auto auto;
-	z-index: 99;
+	z-index: 98;
+}
+.toolbar_tab2 i{
+	background-position: -50px 0;
+}
+.toolbar_tab3 i{
+	background-position: -50px -50px;
+}
+.toolbar_tab4 i{
+	background-position: -50px -100px;
+}
+.toolbar_tab5 i{
+	background-position: -190px -150px;
+}
+.toolbar_tab6 i{
+	background-position: -50px -150px;
+}
+.toolbar_tab7 i{
+	background-position: -50px -250px;
+}
+.toolbar_tab8 i{
+	background-position: -50px -300px;
+}
+.toolbar_tab9 i{
+	background-image: none;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #C81623;
+	border-radius: 2px;
+}
+
+.search_fix{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 2px solid #f10214;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	height: 48px;
+	z-index: 999;
+	display: none;
+}
+.search_fix_inner{	
+	width: 1190px;
+	margin: 0 auto;
+	line-height: 48px;
+}
+.search_fix_logo{
+	display: inline-block;
+	float: left;
+}
+.search_fix a{
+	background-image: url("http://misc.360buyimg.com/mtd/pc/index/home/images/logo_s.v2.png");
+	background-repeat: no-repeat;
+	display: block;
+	height: 40px;
+	width: 125px;
+}
+.search_fix_form{
+	margin-left: 317px;
+	position: relative;
+}
+.search_fix_txt{
+	width: 490px;
+	height: 25px;
+	position: absolute;
+	top: 7px;
+	padding: 4px;
+	border-color: #efefef;
+	background-color: #efefef;
+	border: none;
+	font-size: 14px;
+	line-height: 25px;
+	color: #999;
+	font-family: 微软雅黑;
+	outline: none;
+	float: left;
+}
+.search_fix_btn{
+	border: none;
+	width: 50px;
+	height: 33px;
+	background-color: #F10215;
+	position: absolute;
+	top: 7px;
+	left: 498px;
+}
+
+/*左侧定位导航*/
+.left_nav{
+	position: fixed;
+	left: 123px;
+	top: 118px;
+	width: 26px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2)
+}
+.left_nav_item{
+	width: 100%;
+	padding: 10px 5px;
+	background-color: #918888;
+	border-bottom: 1px solid #b1aaaa;
+	text-align: center;
+	line-height: 14px;
+	cursor: pointer;
+	transition: background-color 0.1s;
+}
+.left_nav_item:hover{
+	background-color: #D70B1C;
+}
+.left_nav_item_act{
+	background-color: #D70B1C; 
+}
+.left_nav_item a{
+	color: #fff;
+}
+.left_nav_item_last{
+	background-color: #5E4A4A;
+}
+.left_nav_item_last i{
+	border-color: #5e4a4a #5e4a4a #fff;
+	border-style: solid;
+	border-width: 4px;
+	display: block;
+	height: 0;
+	width: 0;
+	margin: 0 auto;
+	transition: border-color 0.1s;
+}
+.left_nav_item:hover i{
+	border-color: #D70B1C #D70B1C #fff;
 }
