@@ -2,9 +2,12 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-12-09 10:39:53
+* @Last Modified time: 2016-12-09 11:00:19
 */
-
+@font-face{
+	font-family: fzzhengheis-el-gbregular;
+	src: url(FZZXHJW.TTF)
+}
 /*样式重置*/
 *{ 
 	margin:0;
