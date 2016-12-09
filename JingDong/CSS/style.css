@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-12-09 11:03:16
+* @Last Modified time: 2016-12-09 21:29:40
 */
 
 /*样式重置*/
@@ -370,7 +370,7 @@ nav .nav_list .nav_dropdown .items a{
 }
 .cart .cart_dropdown{
 	width: 278px;
-	height: 49px;
+	height: 49px; 
 	position: absolute;
 	top: 33px;
 	left: -120px;
