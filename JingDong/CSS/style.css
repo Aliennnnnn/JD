@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-18 21:45:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-12-06 21:24:57
+* @Last Modified time: 2016-12-09 10:39:53
 */
 
 /*样式重置*/
@@ -43,6 +43,10 @@ body{
 }
 a{
 	color: #999;
+}
+.wrap{
+	width: 100%;
+	overflow: hidden;
 }
 /*nav*/
 nav{
@@ -308,15 +312,18 @@ nav .nav_list .nav_dropdown .items a{
 
 /*search*/
 .search{
-	margin-left: 516px;
 	margin-top: 25px;
 	position: relative;
+	//left: 516px;
+	width: 100%;
+	//overflow: hidden;
 }
 .search .search_inp{
 	width: 490px;
 	height: 25px;
 	padding: 4px;
 	border: 1px solid #F10215;
+	margin-left: 516px;
 }
 .search .search_btn{
 	width: 50px;
@@ -328,7 +335,13 @@ nav .nav_list .nav_dropdown .items a{
 	position: absolute;
 	top:0;
 	left: 490px;
+	margin-left: 516px;
 }
+.search .tips{
+	width: 100%;
+	margin-left: 516px;
+}
+
 .search .tips>div{
 	float: left;
 	display: inline-block;
@@ -415,9 +428,11 @@ nav .nav_list .nav_dropdown .items a{
 
 /*分类*/
 .kind{
-	margin-left: -100px;
+	width: 677px;
+	overflow: hidden;
+	margin-left: -600px;
 	position: relative;
-	top: 22px;
+	top: 42px;
 }
 .kind div{
 	float: left;
@@ -448,11 +463,14 @@ nav .nav_list .nav_dropdown .items a{
 
 /*主体*/
 .main{
-	width: 1190px;
+	width: 100%;
 	height: 8000px;
 	margin-left: -319px;
 	position: relative;
-	top: 21px;
+	top: 41px;
+}
+.main_wrap{
+	width: 1190px;
 }
 /*分类导航*/
 .main .topmenu{
@@ -856,13 +874,15 @@ nav .nav_list .nav_dropdown .items a{
 
 /*秒杀*/
 .seckill{
-	width: 100%;
+	width: 1190px;
 	height: 55px; 
 	line-height: 55px;
 	background-image: url(https://misc.360buyimg.com/mtd/pc/index/home/images/seckill_hd.png);
 	position: relative;
+	//left: -200px;
 	margin-top: 10px;
 	float: left;
+	margin-left: -200px;
 	margin-bottom: 30px;
 }
 .seckill .box_hd_dec{
@@ -1347,11 +1367,10 @@ nav .nav_list .nav_dropdown .items a{
 }
 
 .coupon{
-	width: 100%;
+	width: 1190px;
 	height: 215px;
 	margin-top:1300px;
 	background-color: #fff;
-
 }
 .coupon .coupon_hd{
 	width: 190px;
@@ -1496,7 +1515,7 @@ nav .nav_list .nav_dropdown .items a{
 
 /*分隔 广告页*/
 .rec_1{
-	width: 1583px;
+	width: 100%;
 	height: 100px;
 	background-color: #e0e0e0;
 	margin: 30px 0;
@@ -1522,6 +1541,7 @@ nav .nav_list .nav_dropdown .items a{
 	height: 405px;
 }
 .ftit_inner{
+	width: 1190px;
 	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAADCAMAAAB/P3U+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJEODlEQkUxNzk2NjExRTY5OTdDQkQ2NDRFQjFCNUU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJEODlEQkUyNzk2NjExRTY5OTdDQkQ2NDRFQjFCNUU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkQ4OURCREY3OTY2MTFFNjk5N0NCRDY0NEVCMUI1RTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkQ4OURCRTA3OTY2MTFFNjk5N0NCRDY0NEVCMUI1RTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GI6sZAAAAD1BMVEXa2trExMTBwcHDw8P///8QPEuGAAAABXRSTlP/////APu2DlMAAAAZSURBVHjaYmBgZGCBAwZmJkYkHoocQIABAAogAIEAYnZPAAAAAElFTkSuQmCC") repeat-x 0 18px;
 	padding: 0 0 20px;
 	height: 35px;
@@ -2072,15 +2092,17 @@ nav .nav_list .nav_dropdown .items a{
 
 /*footer*/
 #footer{
-	width: 1583px;
+	width: 100%;
 	background-color: #EAEAEA;
 	display: block;
 	margin: 0;
 	float: left;
-	position: relative;
-	top: 541px;
-	left: -517px;
-	margin-top: 30px;
+	margin-top: 621px;
+	margin-left: -515px;
+}
+.footer_inner{
+	width: 1190px;
+	margin: 0 auto;
 }
 .mod_service{
 	padding: 30px 0;
