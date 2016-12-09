@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-11-25 16:13:47
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-12-06 21:15:25
+* @Last Modified time: 2016-12-09 19:06:34
 */
 
 'use strict';
@@ -43,7 +43,7 @@ function dropdown(e1,e2){
 		function(){
 			$(e2).css({
 				'position':'absolute',
-				'z-index':'99'
+				'z-index':'999'
 			});
 			$(e2).css({'display':'block'});
 		},
